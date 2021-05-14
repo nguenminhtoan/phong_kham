@@ -30,8 +30,8 @@ class SendEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.'.$this->data["template"])
-                    ->subject($this->data["subject"])
-                    ->with($this->data["data"]);
+        return $this->view('emails.' . $this->data["template"])
+            ->subject($this->data["subject"])
+            ->with($this->data["data"]);
     }
 }
